@@ -76,6 +76,8 @@ int main(int argc, char *argv[])
 	  {
 		printf("\nThe geometric mean is %lf\n", pow(result * 1.0, 1.0 / sizeOfVector));
 	  }
+	  free(recvbuffer);
+	  free(sendbuffer);
 	  MPI_Finalize();
 	  return 0;					  					 
 
